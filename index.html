@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="Nguyen Quoc Anh, Software Development Intern studying Computer Science, shares projects and skills in web development and Software Engineering.">
+    <meta name="author" content="Nguyen Quoc Anh">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Nguyen Quoc Anh | Software Development Intern">
+    <meta property="og:description" content="Explore Nguyen Quoc Anh's Computer Science and Software Engineering portfolio, projects, skills, and experience.">
+    <meta property="og:type" content="website">
+
     <title>Nguyen Quoc Anh | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
@@ -13,16 +20,33 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav>
-        <h2 class="logo">Quoc Anh</h2>
+    <nav class="navbar">
+        <div class="nav-container">
 
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>
-            <a href="#activities">Activities</a>
-            <a href="#contact">Contact</a>
+            <h2 class="logo">Quoc Anh</h2>
+
+            <div class="nav-right">
+
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#education">Education</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#activities">Activities</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <!-- DARK MODE BUTTON -->
+                <button
+                    id="theme-toggle"
+                    class="theme-toggle"
+                    aria-label="Toggle dark mode"
+                >
+                    🌙
+                </button>
+
+            </div>
+
         </div>
     </nav>
 
@@ -41,7 +65,8 @@
                 >
             </div>
 
-            <!-- HERO TEXT -->
+
+            <!-- HERO INFORMATION -->
             <div class="hero-text">
 
                 <p class="hello">Hello, I'm</p>
@@ -55,16 +80,36 @@
                     Fullstack Web Development and Software Engineering.
                 </p>
 
+
                 <div class="hero-buttons">
 
+                    <!-- GITHUB -->
                     <a
                         href="https://github.com/quocanhdayyy"
                         target="_blank"
+                        rel="noopener noreferrer"
                         class="primary-btn"
                     >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 .5C5.73.5.75 5.48.75 11.75c0 5.02 3.25 9.27 7.76 10.77.57.1.77-.25.77-.55v-2.16c-3.15.68-3.81-1.34-3.81-1.34-.52-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.65 1.23 3.3.94.1-.73.4-1.23.72-1.51-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.44.11-3 0 0 .95-.3 3.1 1.16a10.8 10.8 0 0 1 5.64 0C17.05 4.3 18 4.6 18 4.6c.62 1.56.23 2.71.11 3 .73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.3-5.19 5.59.41.35.77 1.04.77 2.1v3.12c0 .3.21.66.78.55 4.5-1.5 7.75-5.75 7.75-10.77C23.25 5.48 18.27.5 12 .5z"/>
+                        </svg>
+
                         View GitHub
                     </a>
 
+
+                    <!-- TODO: Add assets/Nguyen-Quoc-Anh-CV.pdf to enable CV download. -->
+                    <!-- DOWNLOAD CV -->
+                    <a
+                        href="assets/Nguyen-Quoc-Anh-CV.pdf"
+                        download
+                        class="secondary-btn"
+                    >
+                        ↓ Download CV
+                    </a>
+
+
+                    <!-- CONTACT -->
                     <a
                         href="#contact"
                         class="secondary-btn"
@@ -81,13 +126,13 @@
     </header>
 
 
-    <!-- MAIN CONTENT -->
+    <!-- MAIN -->
     <main>
 
         <!-- ABOUT -->
         <section id="about">
 
-            <h2>About Me</h2>
+            <h2 class="section-title">About Me</h2>
 
             <p>
                 Final-year IT student passionate about fullstack web development.
@@ -96,9 +141,10 @@
             </p>
 
             <p>
-                I am a fast learner with strong problem-solving skills
-                and I am seeking opportunities to apply my technical
-                knowledge to practical software projects.
+                Fast learner with strong problem-solving skills.
+                I am seeking opportunities to apply my technical knowledge
+                to practical software projects and continue developing
+                toward a Software Engineer role.
             </p>
 
         </section>
@@ -107,32 +153,77 @@
         <!-- SKILLS -->
         <section id="skills">
 
-            <h2>Skills</h2>
+            <h2 class="section-title">Skills</h2>
 
-            <h3>Technical Skills</h3>
+            <div class="skill-groups">
 
-            <div class="skill-list">
-                <span>JavaScript</span>
-                <span>TypeScript</span>
-                <span>React.js</span>
-                <span>Node.js</span>
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>MySQL</span>
-                <span>MongoDB</span>
-                <span>Git</span>
-                <span>GitHub</span>
-            </div>
+                <div class="skill-group">
 
-            <h3 class="knowledge-title">Knowledge</h3>
+                    <div class="skill-heading">
+                        <span class="skill-icon">&lt;/&gt;</span>
+                        <h3>Frontend</h3>
+                    </div>
 
-            <div class="skill-list">
-                <span>Data Structures & Algorithms</span>
-                <span>Object-Oriented Programming</span>
-                <span>RESTful API</span>
-                <span>Database Design</span>
-                <span>Web Architecture</span>
-                <span>Agile / Scrum</span>
+                    <div class="skill-list">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>TypeScript</span>
+                        <span>React.js</span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-group">
+
+                    <div class="skill-heading">
+                        <span class="skill-icon">{ }</span>
+                        <h3>Backend</h3>
+                    </div>
+
+                    <div class="skill-list">
+                        <span>Node.js</span>
+                        <span>RESTful API</span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-group">
+
+                    <div class="skill-heading">
+                        <span class="skill-icon">DB</span>
+                        <h3>Database</h3>
+                    </div>
+
+                    <div class="skill-list">
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                        <span>Database Design</span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-group">
+
+                    <div class="skill-heading">
+                        <span class="skill-icon">&gt;_</span>
+                        <h3>Tools & Knowledge</h3>
+                    </div>
+
+                    <div class="skill-list">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                        <span>OOP</span>
+                        <span>Data Structures & Algorithms</span>
+                        <span>Agile / Scrum</span>
+                    </div>
+
+                </div>
+
             </div>
 
         </section>
@@ -141,11 +232,12 @@
         <!-- EDUCATION -->
         <section id="education">
 
-            <h2>Education</h2>
+            <h2 class="section-title">Education</h2>
 
             <div class="education-header">
 
                 <div>
+
                     <h3>
                         Hanoi University of Science and Technology
                     </h3>
@@ -153,6 +245,7 @@
                     <p class="subtitle">
                         Computer Science (IT1)
                     </p>
+
                 </div>
 
                 <strong>2023 - Present</strong>
@@ -172,114 +265,155 @@
         <!-- PROJECTS -->
         <section id="projects">
 
-            <h2>Projects</h2>
+            <h2 class="section-title">Projects</h2>
 
             <div class="project-grid">
+
 
                 <!-- PROJECT 1 -->
                 <article class="project-card">
 
-                    <h3>Residential Management System</h3>
+                    <div>
 
-                    <p class="project-role">
-                        BE & FE Developer
-                    </p>
+                        <span class="project-number">01</span>
 
-                    <p>
-                        Built a React & Node.js web application
-                        for resident management with JWT authentication
-                        and role-based access.
-                    </p>
+                        <h3>
+                            Residential Management System
+                        </h3>
 
-                    <p>
-                        Developed RESTful APIs, database schemas,
-                        audit logging and the Reward Management UI.
-                    </p>
+                        <p class="project-role">
+                            BE & FE Developer
+                        </p>
 
-                    <div class="project-tech">
-                        React • Node.js • REST API
+                        <p>
+                            Built a React & Node.js web application
+                            for resident management with JWT authentication
+                            and role-based access.
+                        </p>
+
+                        <p>
+                            Developed RESTful APIs, database schemas,
+                            audit logging and Reward Management UI.
+                        </p>
+
                     </div>
 
+                    <div class="project-tech">
+                        React • Node.js • REST API • JWT
+                    </div>
+
+                    <!-- TODO: Replace with actual repository URL; add target="_blank" and rel="noopener noreferrer" when available. -->
+                    <a href="#" class="secondary-btn repository-btn">View Repository &#8599;</a>
                 </article>
 
 
                 <!-- PROJECT 2 -->
                 <article class="project-card">
 
-                    <h3>Mini Map Pathfinding Application</h3>
+                    <div>
 
-                    <p class="project-role">
-                        Frontend & Algorithm Developer
-                    </p>
+                        <span class="project-number">02</span>
 
-                    <p>
-                        Built a GIS navigation web application
-                        using Flask and Leaflet.js.
-                    </p>
+                        <h3>
+                            Mini Map Pathfinding Application
+                        </h3>
 
-                    <p>
-                        Implemented Dijkstra and A* pathfinding
-                        with dynamic road-weighting logic.
-                    </p>
+                        <p class="project-role">
+                            Frontend & Algorithm Developer
+                        </p>
 
-                    <div class="project-tech">
-                        Flask • Leaflet.js • Algorithms
+                        <p>
+                            Built a GIS navigation web application
+                            using Flask and Leaflet.js.
+                        </p>
+
+                        <p>
+                            Implemented Dijkstra and A* pathfinding
+                            with dynamic road-weighting logic.
+                        </p>
+
                     </div>
 
+                    <div class="project-tech">
+                        Flask • Leaflet.js • Dijkstra • A*
+                    </div>
+
+                    <!-- TODO: Replace with actual repository URL; add target="_blank" and rel="noopener noreferrer" when available. -->
+                    <a href="#" class="secondary-btn repository-btn">View Repository &#8599;</a>
                 </article>
 
 
                 <!-- PROJECT 3 -->
                 <article class="project-card">
 
-                    <h3>Face Anti-Spoofing Detection</h3>
+                    <div>
 
-                    <p class="project-role">
-                        Frontend UI Developer
-                    </p>
+                        <span class="project-number">03</span>
 
-                    <p>
-                        Developed the web interface for a PyTorch
-                        deep learning system designed to detect
-                        face spoofing attacks.
-                    </p>
+                        <h3>
+                            Face Anti-Spoofing Detection
+                        </h3>
 
-                    <p>
-                        Created a responsive interface for uploading
-                        images and videos and displaying inference results.
-                    </p>
+                        <p class="project-role">
+                            Frontend UI Developer
+                        </p>
+
+                        <p>
+                            Developed the web interface for a PyTorch
+                            deep learning system designed to detect
+                            face spoofing attacks.
+                        </p>
+
+                        <p>
+                            Created a responsive interface for uploading
+                            images and videos and displaying inference results.
+                        </p>
+
+                    </div>
 
                     <div class="project-tech">
                         Frontend • PyTorch • Deep Learning
                     </div>
 
+                    <!-- TODO: Replace with actual repository URL; add target="_blank" and rel="noopener noreferrer" when available. -->
+                    <a href="#" class="secondary-btn repository-btn">View Repository &#8599;</a>
                 </article>
 
 
                 <!-- PROJECT 4 -->
                 <article class="project-card">
 
-                    <h3>A Better World</h3>
+                    <div>
 
-                    <p class="project-role">
-                        UI/UX & Music Designer
-                    </p>
+                        <span class="project-number">04</span>
 
-                    <p>
-                        Designed interfaces and audio experiences
-                        for a Java 2D RPG game developed as
-                        an OOP project at HUST.
-                    </p>
+                        <h3>
+                            A Better World
+                        </h3>
 
-                    <p>
-                        Worked on player UI, menus,
-                        combat screens and game music.
-                    </p>
+                        <p class="project-role">
+                            UI/UX & Music Designer
+                        </p>
+
+                        <p>
+                            Designed interfaces and audio experiences
+                            for a Java 2D RPG game developed as
+                            an OOP project at HUST.
+                        </p>
+
+                        <p>
+                            Worked on player UI, menus,
+                            combat screens and game music.
+                        </p>
+
+                    </div>
 
                     <div class="project-tech">
                         Java • UI/UX • OOP
                     </div>
 
+                    <!-- TODO: Replace with actual repository URL; add target="_blank" and rel="noopener noreferrer" when available. -->
+                    <a href="#" class="secondary-btn repository-btn">View Repository &#8599;</a>
                 </article>
 
             </div>
@@ -290,11 +424,12 @@
         <!-- ACTIVITIES -->
         <section id="activities">
 
-            <h2>Activities</h2>
+            <h2 class="section-title">Activities</h2>
 
             <div class="education-header">
 
                 <div>
+
                     <h3>
                         HUST Student Association Volunteer Team
                     </h3>
@@ -302,6 +437,7 @@
                     <p class="subtitle">
                         Management Board Member
                     </p>
+
                 </div>
 
                 <strong>2023 - 2025</strong>
@@ -314,41 +450,96 @@
         <!-- CONTACT -->
         <section id="contact">
 
-            <h2>Contact</h2>
+            <h2 class="section-title">Contact</h2>
+
+            <p class="contact-description">
+                Feel free to contact me for internship opportunities,
+                collaboration or software development projects.
+            </p>
+
 
             <div class="contact-grid">
 
-                <div>
-                    <span>Email</span>
+                <!-- EMAIL -->
+                <a
+                    class="contact-item"
+                    href="mailto:quocanhpro19@gmail.com"
+                >
 
-                    <a href="mailto:quocanhpro19@gmail.com">
-                        quocanhpro19@gmail.com
-                    </a>
-                </div>
+                    <div class="contact-icon">
+                        ✉
+                    </div>
 
-                <div>
-                    <span>Phone</span>
+                    <div>
+                        <span>Email</span>
 
-                    <a href="tel:+84978205366">
-                        0978 205 366
-                    </a>
-                </div>
+                        <strong>
+                            quocanhpro19@gmail.com
+                        </strong>
+                    </div>
 
-                <div>
-                    <span>GitHub</span>
+                </a>
 
-                    <a
-                        href="https://github.com/quocanhdayyy"
-                        target="_blank"
-                    >
-                        quocanhdayyy
-                    </a>
-                </div>
 
-                <div>
-                    <span>Location</span>
+                <!-- PHONE -->
+                <a
+                    class="contact-item"
+                    href="tel:+84978205366"
+                >
 
-                    <p>Hoang Mai, Hanoi</p>
+                    <div class="contact-icon">
+                        ☎
+                    </div>
+
+                    <div>
+                        <span>Phone</span>
+
+                        <strong>
+                            0978 205 366
+                        </strong>
+                    </div>
+
+                </a>
+
+
+                <!-- GITHUB -->
+                <a
+                    class="contact-item"
+                    href="https://github.com/quocanhdayyy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <div class="contact-icon">
+                        GH
+                    </div>
+
+                    <div>
+                        <span>GitHub</span>
+
+                        <strong>
+                            quocanhdayyy
+                        </strong>
+                    </div>
+
+                </a>
+
+
+                <!-- LOCATION -->
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        ⌖
+                    </div>
+
+                    <div>
+                        <span>Location</span>
+
+                        <strong>
+                            Hoang Mai, Hanoi
+                        </strong>
+                    </div>
+
                 </div>
 
             </div>
@@ -360,8 +551,22 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2026 Nguyen Quoc Anh</p>
+
+        <p>
+            © 2026 Nguyen Quoc Anh
+        </p>
+
+        <p class="footer-small">
+            Built with HTML, CSS & JavaScript
+        </p>
+
     </footer>
+
+
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top" hidden><span aria-hidden="true">&#8593;</span></button>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
 
 </body>
 
