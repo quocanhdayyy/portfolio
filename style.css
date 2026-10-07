@@ -306,6 +306,17 @@ body {
 
 
 .primary-btn,
+.contact-button-icon {
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
 .secondary-btn {
     min-height: 46px;
 
